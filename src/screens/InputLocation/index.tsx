@@ -1,19 +1,30 @@
 import {Text, View} from 'react-native';
-import { ComponentButton, ComponentInput } from '../../components';
+import React, {useState} from 'react';
+import { ComponentButton, ComponentInput, ComponentTitle } from '../../components';
 import {styles} from "./styles"
+import { ICoords } from '../../navigations/tab.navigation';
 
-export function InputLocation() {
+export function InputLocation(item: ICoords) {
+const [data, setdata] = useState<ICoords>()
+function handleChange(){
+    setdata({...data, ...item})
+}
     return(
 
         <View style={styles.container}>
-            <Text>Origem</Text>
-            <ComponentInput placeholder='latitude'/>
+            <ComponentTitle>Origem</ComponentTitle>
+            <ComponentInput 
+            placeholder='latitude'
+            keyboardType='decimal-pad'
+            onChangeText={(i) => handleChange({origem: {latitude: Number(i) } })}
+            
+            />
             <ComponentInput placeholder='longitude'/>
-            <Text>Destino</Text>
+            <ComponentTitle>Destino</ComponentTitle>
             <ComponentInput placeholder='latitude'/>
             <ComponentInput placeholder='longitude'/>
             <ComponentButton>
-                <Text>Enviar</Text>
+            <ComponentTitle style={styles.buttonText}>Enviar</ComponentTitle>
             </ComponentButton>
         </View>
         

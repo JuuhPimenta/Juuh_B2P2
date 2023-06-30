@@ -6,5 +6,10 @@ export const styles = StyleSheet.create ({
        flex: 1,
        flexDirection: "column",
        justifyContent: "space-around"
+    },
+    buttonText:{
+     fontWeight: "bold",
+     fontSize:18,
+     textAlign:"center"
     }
 })
