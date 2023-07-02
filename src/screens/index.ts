@@ -1,2 +1,2 @@
 export { InputLocation as ScreenInputLocation } from "./InputLocation"
-export {ShowLocation as Screen} from './ShowLocation'
+export {ShowLocation as ScreenShowLocation} from './ShowLocation'
