@@ -27,24 +27,20 @@ export function InputLocation({navigation}:TabTypes) {
             <ComponentTitle>Origem</ComponentTitle>
             <ComponentInput
                 placeholder='latitude'
-                keyboardType='decimal-pad'
                 onChangeText={(i) => handleChange({ origemlatitude: Number(i) } )}
 
             />
             <ComponentInput 
                 placeholder='longitude'
-                keyboardType='decimal-pad'
                 onChangeText={(i) => handleChange({ origemlongitude: Number(i) } )}
             />
             <ComponentTitle>Destino</ComponentTitle>
             <ComponentInput 
                 placeholder='latitude'
-                keyboardType='decimal-pad'
                 onChangeText={(i) => handleChange({ destinolatitude: Number(i) } )}
             />
-            <ComponentInput
+            <ComponentInput 
                 placeholder='longitude'
-                keyboardType='decimal-pad'
                 onChangeText={(i) => handleChange({ destinolongitude: Number(i) } )}
             />
             <ComponentButton onPress={handleShowMap}>

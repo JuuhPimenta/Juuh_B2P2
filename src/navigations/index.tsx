@@ -6,7 +6,7 @@ import {DrawerNavigation} from "./drawer.navigation"
 export function Navigation() {
     return(
         <NavigationContainer>
-            <DrawerNavigation/>
+            <TabNavigation/>
         </NavigationContainer>
     )
 }

@@ -3,7 +3,7 @@ import {styles} from "./styles"
 
 export function InputInterface ({...rest} : TextInputProps){
     return(
-        <TextInput style={styles.input}>
+        <TextInput style={styles.input} {...rest}>
 
         </TextInput>
     )

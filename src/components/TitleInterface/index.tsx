@@ -3,7 +3,7 @@ import {styles} from "./styles"
 
 export function TitleInterface({...rest} : TextProps){
     return(
-        <Text style={styles.title} {...ReadableStreamDefaultReader}>
+        <Text style={styles.title} {... rest}>
 
         </Text>
     )

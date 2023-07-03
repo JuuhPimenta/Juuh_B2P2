@@ -3,7 +3,7 @@ import {colors} from "../../styles/colors";
 
 export const styles = StyleSheet.create ({
     input:{
-        backgroundColor: colors.secundary,
+        borderColor: colors.secundary,
         borderWidth:2,
         borderRadius: 5,
         fontSize: 18,
